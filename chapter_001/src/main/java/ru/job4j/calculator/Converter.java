@@ -6,8 +6,8 @@ package ru.job4j.calculator;
      */
     public class Converter {
 
-      public int  currentRubelCurrencyForEuro = 70;
-      public int currentRubelCurrencyForDollar = 60;
+       int  rubelCurrencyToEuro = 70;
+       int rubelCurrencyToDollar = 60;
 
 
 
@@ -18,8 +18,7 @@ package ru.job4j.calculator;
          * @return Евро.
          */
         public int rubleToEuro(int value) {
-          final int euro = value/currentRubelCurrencyForEuro;
-            return euro;
+            return value/rubelCurrencyToEuro;
 
         }
 
@@ -29,8 +28,7 @@ package ru.job4j.calculator;
          * @return Доллары
          */
         public int rubleToDollar(int value) {
-           final int dollar = value/currentRubelCurrencyForDollar;
-            return dollar;
+            return value/rubelCurrencyToDollar;
 
         }
         /**
@@ -39,8 +37,7 @@ package ru.job4j.calculator;
          * @return рубли
          */
         public int euroToRubel(int value) {
-           final int rubel = value*currentRubelCurrencyForEuro;
-            return rubel;
+            return value*rubelCurrencyToEuro;
 
     }
         /**
@@ -49,8 +46,7 @@ package ru.job4j.calculator;
          * @return рубли
          */
         public int DollarToRubel(int value) {
-           final int rubel = value*currentRubelCurrencyForDollar;
-            return rubel;
+            return value*rubelCurrencyToDollar;
         }
 
 }
