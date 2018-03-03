@@ -19,8 +19,8 @@ public class Fit {
     }
     /**
      * Ideal weight for a woman
-     * @param height Height
-     * @return ideal weight
+     * @param height Height.
+     * @return ideal weight.
      */
     double womanWeight(double height){
         final double idealWomanWeight = (height - 110) * 1.15;
