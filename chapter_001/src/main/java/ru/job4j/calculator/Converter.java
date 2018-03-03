@@ -45,7 +45,8 @@ package ru.job4j.calculator;
          * @param value доллары.
          * @return рубли
          */
-        public int DollarToRubel(int value) {
+        public int DollarToRubel(int value)
+        {
             return value*rubelCurrencyToDollar;
         }
 
