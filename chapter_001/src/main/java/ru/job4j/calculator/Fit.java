@@ -8,14 +8,25 @@ public class Fit {
 
 
 
+
+
+private static final double MANCALCFORMULA = 100;
+private static final double WOMANCALCFORMULA = 110;
+private static final double COMPLETECALCFORMULA = 1.15;
+
+
+
+
+
+
     /**
      * Ideal weight for a man.
      * @param height Height.
      * @return ideal weight.
      */
     double manWeight(double height) {
-        final double IDEALMANWEIGHT = (height - 100)*1.15;
-        return IDEALMANWEIGHT;
+        double idealWeight4Man = (height - MANCALCFORMULA)*COMPLETECALCFORMULA;
+        return idealWeight4Man;
 
     }
     /**
@@ -24,8 +35,9 @@ public class Fit {
      * @return ideal weight
      */
     double womanWeight(double height){
-        final double IDEALWOMANWEIGHT = (height - 110) * 1.15;
-        return IDEALWOMANWEIGHT;
+
+        double idealWeight4Woman = (height - WOMANCALCFORMULA)*COMPLETECALCFORMULA;
+        return idealWeight4Woman;
     }
 
 }
