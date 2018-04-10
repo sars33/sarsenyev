@@ -16,7 +16,7 @@ public class DummyBot {
         String rsl = "This is confusing me, Please ask a different question. ";
         if ("Hello, Bot.".equals(question)) {
             rsl = "Hi, smart pans.";
-        } else if("Bye.".equals((question))){
+        } else if ("Bye.".equals((question))) {
             rsl = "See you later alligator.";
         }
         return rsl;

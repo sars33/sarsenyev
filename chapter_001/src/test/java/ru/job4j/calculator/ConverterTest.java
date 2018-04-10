@@ -27,7 +27,7 @@ public class ConverterTest {
     @Test
     public void whenOneDollarToRubelsThen60() {
         Converter converter = new Converter();
-        double result = converter.DollarToRubel(1);
+        double result = converter.dollarToRubel(1);
         assertThat(result, is(60D));
     }
 

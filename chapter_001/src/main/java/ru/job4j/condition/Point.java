@@ -11,8 +11,8 @@ public class Point {
     private int y;
 
     public Point(int x, int y) {
-        this.x=x;
-        this.y=y;
+        this.x = x;
+        this.y = y;
     }
     public double distanceTo(Point that) {
 
@@ -29,8 +29,8 @@ public class Point {
 
 
     public static void main(String[] args) {
-        Point a = new Point(3,5);
-        Point b = new Point(1,7);
+        Point a = new Point(3, 5);
+        Point b = new Point(1, 7);
 
 
         System.out.println("x1 = " + a.x);
