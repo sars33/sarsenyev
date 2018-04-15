@@ -6,16 +6,36 @@ package ru.job4j.max;
      */
 
     public class Max {
+
         /**
          * Возвращаем большее значение из двух чисел
-         * @param first number.
+         *
+         * @param first  number.
          * @param second number.
-         * @return second.
+         * @return Max.
          */
 
 
-    public int max(int first, int second) {
-        return first < second ? second : first;
+        public int max(int first, int second) {
+            return first < second ? second : first;
 
-    }
-}
+        }
+
+        /**
+         * Возвращаем большее значение из трёх чисел
+         *
+         * @param first  number.
+         * @param second number.
+         * @param third  number.
+         * @return Max.
+         */
+        public int max(int first, int second, int third) {
+            return max(this.max(first, second), third);
+
+
+            }
+        }
+
+
+
+
